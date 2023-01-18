@@ -1,5 +1,5 @@
 import React from 'react'
-import {Stack, Box, Typography, Button} from '@mui/material'
+import { Box, Typography, Button} from '@mui/material'
 import HeroBannerImage from '../assets/images/banner.png'
 
 
@@ -13,7 +13,7 @@ const Banner = () => {
             Stay Fit
         </Typography>
         <Typography fontWeight={700} sx={{fontSize: {lg :'44px', xs: '40px'}}} mb='23px' mt='30px'>
-            Sweat, Smile <br /> and Repeat 
+            Promoting Health & Fitness
         </Typography>
         <Typography fontSize='22px' lineHeight='35px' mb={4}>
             Check out the most effective excercises 

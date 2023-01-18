@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import { Box } from '@mui/material';
 import './App.css';
-import ExerDetail from './pages/ExerDetail';
+import  ExcerciseDetail from './pages/ExerDetail'
 import Home from './pages/Home'
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -12,7 +12,7 @@ const App = () => (
     < NavBar />
     <Routes>
       < Route path='/' element={<Home />} />
-      <Route path="/exercise/:id" element={<ExerDetail />} />
+      <Route path="/exercise/:id" element={<ExcerciseDetail />} />
 
     </Routes>
     < Footer />
