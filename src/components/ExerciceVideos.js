@@ -7,7 +7,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
   return (
     <Box sx={{marginTop: {lg: '200px', xs: '20px'}}} p='20px'>
       <Typography variant='h6' mb='33ppx'>
-        Watch <span style={{color: '#ff2625', textTransform: 'capitalize'}}>{name}</span> excercise videos
+        Watch how to do <span style={{color: '#ff2625', textTransform:'capitalize'}}>{name.toUpperCase()}</span> on <a href='https://youtube.com' style={{color: 'blue'}}> Youtube</a>
       </Typography>
       <Stack justifyContent='flex-start' flexWrap ='wrap' alignItems='center' sx={{
         flexDirection: {lg: 'row'},
@@ -21,11 +21,11 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
           >
             <img src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
-              <Typography variant='h5' color='#000'>
+              <Typography variant='h6' color='#000'>
                 {item.video.title}
               </Typography>
-              <Typography variant='h6' color='#000'>
-                {item.video.channelName}
+              <Typography variant='h7' color='#000'>
+               @ <em style={{color: 'blue'}}> {item.video.channelName}</em>
               </Typography>
             </Box>
           </a>

@@ -1,10 +1,7 @@
 import React, { useContext } from 'react';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { Box, Typography } from '@mui/material';
-import ExerciseCard from './ExerciseCard'
 
-import RightArrowIcon from '../assets/icon/r-arrow.png';
-import LeftArrowIcon from '../assets/icon/l-arrow.png';
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
@@ -29,7 +26,7 @@ const Scroll = ({ data, isBodyParts, setBodyPart, bodyPart }) => (
     {data.map((item) => (
       <Box
         key={item.id || item}
-        itemId={item.id || item}
+        itemID={item.id || item}
         title={item.id || item}
         m="0 40px"
       >

@@ -25,7 +25,7 @@ const Detail = ({exerciseDetails}) => {
       <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />
       <Stack sx={{gap: {lg: '25px', xs: '15px'}}}>
         <Typography variant='h5'>
-          {name}
+          {name.toUpperCase()}
         </Typography>
         <Typography variant='h6'>
           Exercises Keep you strong. {name} {` `}
