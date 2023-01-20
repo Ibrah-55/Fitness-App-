@@ -7,7 +7,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
   return (
     <Box sx={{marginTop: {lg: '200px', xs: '20px'}}} p='20px'>
       <Typography variant='h6' mb='33ppx'>
-        Watch how to do <span style={{color: '#ff2625', textTransform:'capitalize'}}>{name.toUpperCase()}</span> on <a href='https://youtube.com' style={{color: 'blue'}}> Youtube</a>
+        Watch how to do <span style={{color: '#ff2625', textTransform:'capitalize'}}>{name}</span> on <a href='https://youtube.com' style={{color: 'blue'}}> Youtube</a>
       </Typography>
       <Stack justifyContent='flex-start' flexWrap ='wrap' alignItems='center' sx={{
         flexDirection: {lg: 'row'},
