@@ -6,7 +6,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
   if(!exerciseVideos.length) return <Loader />
   return (
     <Box sx={{marginTop: {lg: '200px', xs: '20px'}}} p='20px'>
-      <Typography variant='h3' mb='33ppx'>
+      <Typography variant='h6' mb='33ppx'>
         Watch <span style={{color: '#ff2625', textTransform: 'capitalize'}}>{name}</span> excercise videos
       </Typography>
       <Stack justifyContent='flex-start' flexWrap ='wrap' alignItems='center' sx={{

@@ -6,10 +6,11 @@ import  ExcerciseDetail from './pages/ExerDetail'
 import Home from './pages/Home'
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import ResponsiveAppBar from './components/NavbarTwo.tsx';
 const App = () => (
    <Box width='40px' sx={{width: {x1: '1448px'}}}m = 'auto'>
     <Router>
-    < NavBar />
+    <ResponsiveAppBar />
     <Routes>
       < Route path='/' element={<Home />} />
       <Route path="/exercise/:id" element={<ExcerciseDetail />} />

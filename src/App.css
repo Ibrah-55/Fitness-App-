@@ -55,11 +55,11 @@ body {
 
 .hero-banner-img {
   position: absolute;
-  right: 40px;
-  top: 0px;
-  width: 700px;
-  height: 900px;
-  margin-top: -330px;
+  right: 10px;
+  top: 220px;
+  width: 500px;
+  height: 300px;
+  margin-top: -230px;
 
 }
 
@@ -102,7 +102,7 @@ body {
   flex-direction: column;
   gap: 24px;
   width: 287px;
-  height: 281px;
+  height: 181px;
   text-decoration: none;
 }
 
@@ -123,7 +123,9 @@ body {
   }
 
   .hero-banner-img {
-    display: none;
+    display:flex;
+    width: 180px;
+    height: 100px;
   }
 
   .exercise-card {
@@ -131,8 +133,8 @@ body {
   }
 
   .exercise-video {
-    width: 320px;
-    height: 200px;
+    width: 420px;
+    height: 400px;
   }
 
 }
@@ -152,9 +154,11 @@ body {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
   }
+  
 }
   @media screen and (max-width:480px) {
     .exercise-card {
-      width: 200px;
+      width: 300px;
+      height: 400px;
     }
 }

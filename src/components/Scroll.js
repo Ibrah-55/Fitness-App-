@@ -3,7 +3,6 @@ import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { Box, Typography } from '@mui/material';
 import ExerciseCard from './ExerciseCard'
 
-import Parts from './Parts';
 import RightArrowIcon from '../assets/icon/r-arrow.png';
 import LeftArrowIcon from '../assets/icon/l-arrow.png';
 
@@ -12,7 +11,6 @@ const LeftArrow = () => {
 
   return (
     <Typography onClick={() => scrollPrev()} className="right-arrow">
-      <img src={LeftArrowIcon} alt="right-arrow" />
     </Typography>
   );
 };
@@ -22,7 +20,6 @@ const RightArrow = () => {
 
   return (
     <Typography onClick={() => scrollNext()} className="left-arrow">
-      <img src={RightArrowIcon} alt="right-arrow" />
     </Typography>
   );
 };
@@ -36,8 +33,7 @@ const Scroll = ({ data, isBodyParts, setBodyPart, bodyPart }) => (
         title={item.id || item}
         m="0 40px"
       >
-        {isBodyParts ? <Parts item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} /> 
-        : <ExerciseCard exercise={item} />}
+       
       </Box>
     ))}
   </ScrollMenu>

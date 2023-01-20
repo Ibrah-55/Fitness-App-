@@ -23,8 +23,8 @@ const Banner = () => {
             display: {lg: 'block', sm: 'none'}
         }} fontSize='200px'>Excercises</Typography>
         <Button variant='contained' color='error'
-        href='#excercises' sx={{backgroundColor: '#ff2625', padding: '10px'}}>Explore Excercises</Button>
-        <img src={HeroBannerImage} alt='banner' className='hero-banner-img' />
+        href='#excercise' sx={{backgroundColor: '#ff2625', padding: '10px'}}>Explore Excercises</Button>
+        <img src={HeroBannerImage} alt='banner' className='hero-banner-img'  />
     </Box>
   )
 }

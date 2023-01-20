@@ -7,14 +7,12 @@ import Logo from '../assets/images/logo1.png'
 
 const Footer = () => {
     return (
-       <Box mt='40px' bgcolor= '#fff3fA'>
-        <Stack gap = '40px' alignItems='center' px= '40px' pt = '24px'>
-            <Link to= '/'>
-                <img src={Logo} alt='logo' width='100px' height='40px' /> 
+       <Box bgcolor= 'aquamarine' height = '140px' mt='5px'>
+        <Stack gap = '10px' alignItems='center' px= '40px' pt = '50px'>
+            <Link to= '/' >
+                <img src={Logo} alt='logo' width='50px' height='10px' /> 
             </Link>
-            <Typography variant='h5' pb='40px'mt='20px'>
-                Made by Ibrah Jarvis @ { new Date().getFullYear()} 
-            </Typography>
+               <i> Made by Ibrah Jarvis @ { new Date().getFullYear()} </i>
         </Stack> 
 
        </Box>
