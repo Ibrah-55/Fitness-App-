@@ -18,10 +18,7 @@ const Banner = () => {
         <Typography fontSize='22px' lineHeight='35px' mb={4}>
             Check out the most effective excercises 
         </Typography>
-        <Typography fontWeight={600} color='#ff2625' sx={{
-            opacity: 0.1,
-            display: {lg: 'block', sm: 'none'}
-        }} fontSize='200px'>Excercises</Typography>
+       
         <Button variant='contained' color='error'
         href='#excercise' sx={{backgroundColor: '#ff2625', padding: '10px'}}>Explore Excercises</Button>
         <img src={HeroBannerImage} alt='banner' className='hero-banner-img'  />
